@@ -11,7 +11,7 @@ import { AuthLoginInfo } from '../auth/login-info';
 })
 export class LoginComponent implements OnInit {
 
-  form: any = {};
+    form: any = {};
   isLoggedIn = false;
   isLoginFailed = false;
   errorMessage = '';
@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private authService: AuthService, private tokenStorage: TokenStorageService) { }
 
+  // tslint:disable-next-line:typedef
   ngOnInit() {
     if (this.tokenStorage.getToken()) {
       this.isLoggedIn = true;
@@ -27,6 +28,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  // tslint:disable-next-line:typedef
   onSubmit() {
     this.loginInfo = new AuthLoginInfo(
       this.form.email,
@@ -50,6 +52,7 @@ export class LoginComponent implements OnInit {
     );
   }
 
+  // tslint:disable-next-line:typedef
   reloadPage() {
     window.location.reload();
   }

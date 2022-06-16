@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule } from '@angular/common/http';
 
 import { httpInterceptorProviders } from './auth/auth-interceptor';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { httpInterceptorProviders } from './auth/auth-interceptor';
     HomeComponent,
     UserComponent,
     PmComponent,
-    AdminComponent
+    AdminComponent,
+    ResetPasswordComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
