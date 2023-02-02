@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class SignUpInfo {\n  constructor(firstName, email, lastName, password) {\n    this.firstName = firstName;\n    this.lastName = lastName;\n    this.email = email;\n    this.password = password;\n    this.role = ['user'];\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
